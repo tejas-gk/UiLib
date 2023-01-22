@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+.body {
+  background-image: radial-gradient(
+    circle at top center,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+  background-size: cover;
+  height: 100vh;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  overflow: hidden;
+}
+.playable-area{
+  background-image:url('assets/images/bg-triangle.svg');
+}
+.debug{
+  @apply bg-red-500;
+}
