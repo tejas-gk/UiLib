@@ -23,13 +23,6 @@ const navigation = [
     },
     {
         id: 4,
-        name: 'ranking',
-        link: '/ranking',
-        img: '/assets/rankings.jpeg',
-        description:'rankings'
-    },
-    {
-        id: 5,
         name: 'shopping-cart',
         link: '/shopping-cart',
         img: '/assets/shopping-cart.jpeg',
@@ -37,26 +30,39 @@ const navigation = [
 
     },
     {
-        id: 6,
+        id: 5,
         name: 'product-preview',
         link: '/product-preview',
         img: '/assets/product-preview-card-component-main/product-preview-card-component-main/design/desktop-design.jpg',
         description: 'product preview'
     },
     {
-        id: 7,
+        id: 6,
         name: 'nft',
         link: '/nft',
         img: '/assets/nft-preview-card-component-main/design/desktop-design.jpg',
         description: 'nft'
     },
     {
-        id: 8,
+        id: 7,
         name: 'rock-paper-scissors',
         link: '/rock-paper-scissors',
         img: '/assets/rock-paper-scissors/design/desktop-preview.jpg',
         description: 'rock-paper-scissors'
 
+    },
+    {
+        id: 8,
+        name: 'profile-card',
+        link: '/profile-card',
+        img: '/assets/profile-card-component-main/design/desktop-design.jpg',
+        description: 'profile-card'
+    },
+    {
+        id: 9,
+        name: 'advice',
+        link: 'advice',
+        img:'/assets/advice-generator-app-main/design/active-states.jpg'
     }
 ]
     
