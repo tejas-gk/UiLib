@@ -15,7 +15,7 @@
   overflow: hidden;
 }
 .playable-area{
-  background-image:url('assets/images/bg-triangle.svg');
+  background-image:url('/assets/rock-paper-scissors/images/bg-triangle.svg');
 }
 .debug{
   @apply bg-red-500;

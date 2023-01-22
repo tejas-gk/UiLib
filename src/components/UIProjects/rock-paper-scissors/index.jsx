@@ -3,7 +3,7 @@ import images from '../../../setup/images'
 import HandIcons from './HandIcons'
 import Choice from './Choice'
 import Header from './Header'
-import './rock-paper-scrissors.css'
+import './rock-paper-scissors.css'
 export const ScoreContext = createContext({score:0})
 
 export default function index() {
