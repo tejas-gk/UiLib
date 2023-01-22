@@ -2,7 +2,7 @@ import {useState,createContext} from 'react'
 import images from '../../../setup/images'
 import HandIcons from './HandIcons'
 import Choice from './Choice'
-import Header from './header'
+import Header from './Header'
 import './rock-paper-scrissors.css'
 export const ScoreContext = createContext({score:0})
 
