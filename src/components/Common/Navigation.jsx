@@ -16,13 +16,6 @@ const navigation = [
 
     },
     {
-        name: 'dictionary',
-        link: '/dictionary',
-        img: '/assets/dictionary-app-main/design/desktop-design.jpg',
-        description: 'Dictionary',
-        timespent: '1 hour'
-    },
-    {
 
         name: 'hydrate',
         link: '/hydrate',
