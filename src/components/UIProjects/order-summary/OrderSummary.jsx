@@ -4,7 +4,7 @@ import './order-summary.css'
 export default function OrderSummary() {
   return (
       <div className="flex items-center justify-center h-screen mt-12">
-          <div className="flex flex-col items-center justify-center w-1/2 shadow-md max-w-[28rem] bg-white pb-[5rem]">
+          <div className="flex flex-col items-center justify-center md:w-1/2 shadow-md max-w-[28rem] bg-white lmd:pb-[5rem]">
               <img src={illustrationHero} alt="illustrationHero" />
               <div className="flex flex-col items-center justify-center p-6 mt-12">
                   <h1 className="text-3xl font-bold text-center">Order Summary</h1>
@@ -12,14 +12,15 @@ export default function OrderSummary() {
               </div>
               
               <div className='plan flex flex-row items-center justify-between w-auto shadow-lg shadow-[hsl(225, 100%, 98%)]
-                rounded-[0.5rem] p-4 gap-7
+                rounded-[0.5rem] lg:p-4 gap-7 
               '>
                   <div className="flex flex-col items-center justify-center">
                       <img src={IconMusic
                         } alt="IconMusic" />
                   </div>
                   <div className="flex flex-col items-center justify-center">
-                      <h1 className="text-xl font-bold">Annual Plan</h1>
+                      <h1 className="md:text-xl font-bold text-center text-md
+                      ">Annual Plan</h1>
                       <p className="text-gray-400">$59.99/year</p>
                   </div>
                   <div className="flex flex-col items-center justify-center">
