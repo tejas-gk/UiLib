@@ -10,7 +10,7 @@ export default function Advice() {
     }
 
   return (
-      <div className='advice-container bg-[#202632] min-h-screen flex justify-center items-center '>
+      <div className='bg-[#202632] min-h-screen flex justify-center items-center '>
           <div className='bg-[#313a49] w-[36rem] rounded-2xl relative'>
               <div className=" px-12 py-8 flex flex-col items-center justify-center gap-8 text-center">
                   <p className='text-[#47b687] uppercase leading-3 text-sm tracking-[0.3rem]'>Advice 
