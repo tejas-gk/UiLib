@@ -74,6 +74,13 @@ const navigation = [
     },
     {
 
+        name: 'expenses-chart',
+        link: 'expenses-chart',
+        img: '/assets/expenses-chart/design/active-states.jpg',
+        description: 'expenses-chart',
+    },
+    {
+
         name: 'password-generator',
         link: 'password-generator',
         img: '/assets/password-generator.jpg',

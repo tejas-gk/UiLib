@@ -18,6 +18,7 @@ import PasswordGenerator from './pages/PasswordGenerator'
 import Dictionary from './components/UIProjects/dictionary/index'
 import GameOfLife from './components/UIProjects/game-of-life/index'
 import News from './pages/News'
+import ExpensesChart from './pages/ExpensesChart'
 export default function App() {
   return (
       <>
@@ -36,7 +37,8 @@ export default function App() {
           <Route path='product-preview' element={<ProductPreview />} />
             <Route path='nft' element={<Nft />} />
             <Route path='rock-paper-scissors' element={<RockPaperScissors />} />
-            <Route path='profile-card' element={<ProfileCard />} />
+            <Route path='profile-card' element={<ProfileCard />} />.
+            <Route path='expenses-chart' element={<ExpensesChart />} />
             <Route path='advice' element={<Advice />} />
             <Route path='dictionary' element={<Dictionary />} />
             <Route path='password-generator' element={<PasswordGenerator />} />
