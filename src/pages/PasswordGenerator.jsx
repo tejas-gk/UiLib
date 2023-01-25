@@ -104,9 +104,10 @@ export default function PasswordGenerator() {
                     " type="range" min="10" max="30" defaultValue="20" step="1" />
 					<div>
                             <div className="flex mt-5">
-                                <input type="checkbox" className={`${
-                                    buttonOn ? 'bg-[#A4FFAF]' : 'bg-[#18171f]'
-                               }`} />
+                                <input type="checkbox" className={`${buttonOn ? 'bg-[#A4FFAF]' : 'bg-[#18171f]'
+                                    }`}
+                                    onClick={handleUpperCase}
+                                />
                                 <p className="ml-5 text-white">Include UpperCase Letters</p>
 		                </div>
 						<div className="flex mt-5">
@@ -132,7 +133,7 @@ export default function PasswordGenerator() {
                             
 					</div>
 
-					<div className="flex sm:flex-row justify-between items-center  mb-5 bg-[#18171f] mt-5 p-5  flex-col">
+					<div className="flex flex-row justify-between items-center  mb-5 bg-[#18171f] mt-5 p-5  ">
 						<p className="text-[#62606d]">Strength</p>
 						<div className="flex items-center">
 							<div className="flex items-center">

@@ -80,7 +80,36 @@ const navigation = [
         status: 'in progress',
         description: 'password-generator',
         
-    }
+    },
+    {
+        name: 'news homepage',
+        link: 'news',
+        img: '/assets/news/design/active-states.jpg',
+        description: 'news homepage',
+        status: 'in progress',
+    },
+    {
+        name: 'dictionary',
+        link: 'dictionary',
+        img: '/assets/dictionary/preview.jpg',
+        description: 'dictionary',
+        status: 'in progress',
+    },
+    {
+        name: 'interactive rating',
+        link: 'interactive-rating',
+        img: '/assets/interactive-rating-component-main/design/active-states.jpg',
+        description: 'interactive rating',
+        status: 'in progress',
+    },
+    {
+        name: 'four card feature',
+        link: 'four-card-feature',
+        img: '/assets/four-card-feature-section-master/design/desktop-design.jpg',
+        description: 'four card feature',
+        status: 'in progress',
+
+    },
 ]
     
 export default function Navigation() {

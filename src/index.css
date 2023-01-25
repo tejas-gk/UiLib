@@ -18,150 +18,29 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* order summary */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-ranks
-.card:nth-child(1){
-  position:absolute;
-  width:300px;
-  height:400px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  border-radius: 10px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
-:root{
-  --top: 35px;
-  --left: -1.40px;
-  --width: 15px;
-  --card-width: 300px;
-  --card-top: 10px;
-}
-.ranks:nth-child(1){
-  color:white;
-  margin-right: 2.5rem;
-  font-size: 1.2rem;
-}
-.crown i{
-  background-image: url("../src/crown.png");
-  z-index: 69;
-  background-size: 100%;
-}
-.card:nth-child(1) i{
-  position: absolute;
-  top: var(--card-top);
-  height:50px;
-  left:-42.4px;
-  background-color:rgb(91,91,230,.8);
-  width:110%;
-  cursor: pointer;
-  border-radius: 30px;
-  border-bottom-left-radius: 0;
-  z-index: 8;
-}
-.card:nth-child(1) i::before{
-   content: "";
-  position: absolute;
-  top:var(--top);
-  width:var(--width);
-  height:30px;
-  background-color:rgb(91,91,230);
-  left:var(--left);
-  z-index: 2;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-}
-.card:nth-child(1) i::after{
-  content: "";
-  position: absolute;
-  top:var(--top);
-  width:var(--width);
-  height:15px;
-  left:var(--left);
-  background-color:rgb(91,91,230,.7)
 
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+.container {
+    background-color: hsl(36, 100%, 99%);
+    width: 85%;
+    height: 100%;
+    margin: 30px auto;
+}
+
+header {
+    flex-flow: row wrap;
 }
 
 
@@ -169,42 +48,6 @@ ranks
 
 
 
- */
-/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
-/* 
-.ranks:nth-child(1) {
-  background-color: rgba(91,91,230,1);
-  color:white;
-  transform: translateX(-3rem);
-  width: 44rem;
-  padding: .4rem 1.5rem;
-  border-radius: 0 0 1rem 1rem;
-  position: relative;
-  z-index: 1;
-}
-.ranks:nth-child(1)::before{
-  content: "";
-  position: absolute;
-  top:15px;
-  width:20px;
-  height:30px;
-  background-color: rgba(91,91,230,.8);
-  transform: rotate(-45deg);
-  left: 0px;
-  z-index: -111;
-  border-radius: 0 0 1rem 1rem;
-}
-.ranks:nth-child(1)::after{
-  content: "";
-  position: absolute;
-  top:50px;
-  width:15px;
-  height:30px;
-  background-color: rgba(91,91,230,.7);
-}
-.continue{
-  background-color: rgba(91,91,230,0.9);
-} */
 
 
 
@@ -219,20 +62,52 @@ ranks
 
 
 
-/* 
-form
-.heart{
-  height: 100px;
-  width: 100px;
-  background: url("../src/heart.png");
-  background-position: left;
-  cursor: pointer;
-  position: absolute;
-  animation: like-anim 0.7s steps(28) forwards;
-}
 
-@keyframes like-anim {
-  to {
-    background-position: right;
-  }
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

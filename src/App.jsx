@@ -16,6 +16,9 @@ import ProfileCard from './pages/ProfileCard'
 import Advice from './pages/Advice'
 import PasswordGenerator from './pages/PasswordGenerator'
 import Dictionary from './components/UIProjects/dictionary/index'
+import Pomodoro from './components/UIProjects/pomodoro/index'
+import GameOfLife from './components/UIProjects/game-of-life/index'
+import News from './pages/News'
 export default function App() {
   return (
       <>
@@ -38,6 +41,9 @@ export default function App() {
             <Route path='advice' element={<Advice />} />
             <Route path='dictionary' element={<Dictionary />} />
             <Route path='password-generator' element={<PasswordGenerator />} />
+            <Route path='pomodoro' element={<Pomodoro />} />
+            <Route path='game-of-life' element={<GameOfLife />} />
+            <Route path='news' element={<News />} />
           <Route path='*' element={<div>404</div>} />
         </Routes>
       </BrowserRouter>
