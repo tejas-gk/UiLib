@@ -19,6 +19,7 @@ import Dictionary from './components/UIProjects/dictionary/index'
 import GameOfLife from './components/UIProjects/game-of-life/index'
 import News from './pages/News'
 import ExpensesChart from './pages/ExpensesChart'
+import InteractiveRating from './InteractiveRating'
 export default function App() {
   return (
       <>
@@ -44,7 +45,7 @@ export default function App() {
             <Route path='password-generator' element={<PasswordGenerator />} />
             <Route path='game-of-life' element={<GameOfLife />} />
             <Route path='news' element={<News />} />
-            {/* <Route path='interactive-rating' element={<InteractiveRating/>} /> */}
+            <Route path='interactive-rating' element={<InteractiveRating/>} />
           <Route path='*' element={<div>404</div>} />
         </Routes>
       </BrowserRouter>
