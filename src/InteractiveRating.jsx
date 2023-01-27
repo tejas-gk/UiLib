@@ -48,11 +48,10 @@ export default function InteractiveRating() {
                                 ref={ratingRef}
                                   onClick={() => {
                                       setRate(rating)
-                                      
                                   }}
-                                  className={`rounded-full bg-[#252e37] w-9 h-9 flex items-center justify-center text-[#4b545d]
+                                  className={`rounded-full bg-[#252e37] w-9 h-9 flex items-center justify-center 
                           hover:bg-[#fc7613] hover:text-white cursor-pointer transition ease-in-out 
-                             ${rating===rate ? 'bg-[#fc7613] text-white' : ''}
+                             ${rating === rate ? 'bg-[#fc7613] text-white' : 'text-[#4b545d]'}
                                 md:w-12 md:h-12 md:text-[0.9375rem] md:font-bold`}>
                                   {rating}
                               </div>
