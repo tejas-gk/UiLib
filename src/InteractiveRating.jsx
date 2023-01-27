@@ -66,8 +66,8 @@ export default function InteractiveRating() {
                       </button>
                   </div>
               ) : (
-                      <div className="text-white mx-auto w-80 mt-40 bg-[#1f252d] text-sm  rounded-2xl p-5 
-                      md:mt-48 md:w-[26rem] md:rounded-[3rem] md:p-9">
+                      <div className="text-white mx-auto w-80  bg-[#1f252d] text-sm  rounded-2xl p-5 
+                       md:w-[26rem] md:rounded-[3rem] md:p-9">
                           <div className="scale-90 flex items-center justify-center md:scale-100">
                               <img src="/assets/interactive-rating-component-main/images/illustration-thank-you.svg" />
                           </div>
