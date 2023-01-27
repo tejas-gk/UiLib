@@ -2,18 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
-.body {
-  background-image: radial-gradient(
-    circle at top center,
-    hsl(214, 47%, 23%),
-    hsl(237, 49%, 15%)
-  );
-  background-size: cover;
-  height: 100vh;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  overflow: hidden;
-}
+/* @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"); */
+
 .playable-area{
   background-image:url('/assets/rock-paper-scissors/images/bg-triangle.svg');
 }
