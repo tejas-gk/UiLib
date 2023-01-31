@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import Navbar from '@/components/Common/Navbar'
+import Navbar from './Navbar'
 const navigation = [
     {
         name: 'qr',
