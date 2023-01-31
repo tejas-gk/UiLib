@@ -66,7 +66,7 @@ export default function index() {
     }
 
   return (
-    <div className='body'>
+    <div className='body bg-[#192748]'>
        <Header
         score={score}
       />

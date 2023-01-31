@@ -1,12 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"); */
-
 .playable-area{
   background-image:url('/assets/rock-paper-scissors/images/bg-triangle.svg');
-}
-.debug{
-  @apply bg-red-500;
 }

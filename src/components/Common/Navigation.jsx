@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useState , useEffect} from 'react'
 const navigation = [
     {
         name: 'qr',
@@ -120,7 +121,17 @@ const navigation = [
 ]
     
 export default function Navigation() {
-  return (
+    const [contributions, setContributions] = useState([])
+    useEffect(() => {
+        fetch('https://api.github.com/repos/tejas-gk/UILib/contributors')
+
+            .then(res => res.json())
+            .then(data => {
+                setContributions(data)
+            })
+    }, [])
+    return (
+      <div>
       <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-4 px-8 gap-6'>
           {
               navigation.map((item,i) => {
@@ -139,7 +150,47 @@ export default function Navigation() {
                   )
               })
             }
-    </div>
+            </div>
+            <div className='flex flex-col justify-center items-center mt-20 border-t-2 border-t-gray-300'>
+                <h1 className='text-2xl font-bold'>Contributors</h1>
+                <div className='flex flex-wrap justify-center items-center mt-4 gap-10'>
+                    {
+                        contributions.map((item, i) => {
+                            return (
+                                <div key={i} className='flex flex-col justify-center items-center'>
+                                    <a href={item.html_url} target='_blank' rel='noreferrer'>
+                                    <img src={item.avatar_url} alt='hello'
+                                        className='w-20 h-20 rounded-full'
+                                    />
+                                        <p className='text-center'>{item.login}</p>
+                                        </a>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+                
+            </div>
+            
+
+            {/* <div>
+                <div className="flex items-center space-x-2 text-base">
+                    <h4 className="font-semibold text-slate-900">Contributors</h4>
+                    <span className="rounded-full bg-slate-100 px-2 py-1 text-xs font-semibold text-slate-700">204</span>
+                </div>
+                <div className="mt-3 flex -space-x-2 overflow-hidden">
+                    <img className="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                    <img className="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                    <img className="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt="" />
+                    <img className="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                    <img className="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                </div>
+                <div className="mt-3 text-sm font-medium">
+                    <a href="#" className="text-blue-500">+ 198 others</a>
+                </div>
+            </div> */}
+
+        </div>
   )
 }
 
