@@ -1,64 +1,80 @@
+import React from 'react'
+
 export default function FourCards() {
     return (
-        <div className='
-
-        '>
-            <div className="my-0 mx-auto mb-10 text-center px-5 max-w-[78%]">
-
-            <h2 className="text-3xl font-bold"
-            >  Reliable, efficient delivery
-            </h2>
-            <h3>
-                Powered by Technology
-            </h3>
-            <p className="text-gray-400 text-center 
-            ">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
-            </div>
-
-            <div className='grid p-8 gap-8'>
-                <div className='border-0 rounded-sm p-[30px] bg-white shadow-lg 
-                    border-t-4 border-[#3b3054] md:absolute md:translate-x-(-110%) md:translate-y-(73%) md:z-10
-                '>
-                    <h3>Supervisor</h3>
-                    <p className="pt-5 text-[0.875rem] leading-[1.5rem]">Monitors activity to identify project roadblocks</p>
-                    <div className=" mt-10 flex ">
-                    <img src="/assets/four-card-feature-section-master/images/icon-supervisor.svg" alt="supervisor" />
-                    </div>
+        <div className='flex flex-col gap-10 p-8 pt-14 min-[339px]:p-14 min-[412px]:p-16 min-[540px]:p-24 min-[540px]:gap-20 md:p-24 lg:py-12 items-center'>
+            <section className="flex flex-col gap-4 text-center md:gap-10 lg:px-32">
+                <div
+                    className="text-lg min-[320px]:text-xl min-[540px]:text-3xl md:text-5xl flex flex-col md:gap-3 lg:text-4xl lg:gap-1">
+                    <h1 className="font-extralight text-[#9e9ea9]">Reliable, efficient delivery</h1>
+                    <h1 className="font-semibold">Powered by Technology</h1>
                 </div>
-                <div className='border-0 rounded-sm p-[30px] bg-white shadow-lg  border-t-4 border-[#f46262]
-                    md:absolute md:translate-x-(110%) md:translate-y-(-190%) md:z-10
-                '>
-                    <h3>Team Builder</h3>
-                    <p className="pt-5 text-[0.875rem] leading-[1.5rem]">Scans our talent network to create the optimal team for your project</p>
-                    <div className=" mt-10 flex ">
-
-                    <img src="/assets/four-card-feature-section-master/images/icon-team-builder.svg" alt="team builder" />
-                    </div>
+                <div>
+                    <p className="text-[#b7acb0] text-xs min-[360px]:text-sm min-[540px]:text-lg md:text-3xl lg:text-xl">
+                        Our  Artificial  Intelligence powered  tools use  millions  of  project data  points  to ensure that your project is successful</p>
                 </div>
+            </section>
+            <section className="flex flex-col gap-6 min-[540px]:gap-12 lg:grid grid-cols-3 items-center lg:gap-8 xl:w-4/5">
+
+                <div className="gap-1 shadow-[0px_1px_20px_1px_rgba(0,0,0,.2)] flex flex-col p-5 border-t-2 border-solid rounded-md min-[412px]:gap-3 min-[540px]:shadow-[0px_1px_25px_1px_rgba(0,0,0,.2)] min-[540px]:border-t-4 md:p-10 md:gap-14 md:rounded-xl md:w-8/12 lg:gap-6 lg:w-full lg:md:rounded-md lg:p-6 border border-t-[#45d3d3] lg:row-span-2">
+                    <div className="flex flex-col gap-1 min-[360px]:gap-2 min-[540px]:gap-4 md:gap-7 lg:gap-2">
+                        <h1 className=" font-semibold   min-[360px] text-xl min-[540px]:text-3xl md:text-5xl lg:text-xl">
+                            Supervisor
+                        </h1>
+                        <p className="text-[#b8b9c0] text-[10px] min-[360px]:text-xs min-[540px]:text-base md:text-2xl lg:text-sm">
+                            Monitors activity to identify project roadblocks
+                        </p>
+                    </div>
+                    <picture className="w-full flex justify-end">
+                        <img className="w-11 min-[412px]:w-12 min-[540px]:w-14 md:w-20 lg:w-12" src="/assets/four-card-feature-section-master/images/icon-supervisor.svg" alt="" />
+                    </picture>
+                </div>
+
+          
                 
-                <div className='border-0 rounded-sm p-[30px] bg-white shadow-lg border-t-4 border-[#f2c94c]
-                     md:absolute md:translate-x-(-110%) md:translate-y-(190%) md:z-10
-                    '>
-                    <h3>Karma</h3>
-                    <p className="pt-5 text-[0.875rem] leading-[1.5rem]">Regularly evaluates our talent to ensure quality</p>
-                    <div className=" mt-10 flex ">
-                    <img src="/assets/four-card-feature-section-master/images/icon-karma.svg" alt="karma" />
+                <div className="gap-1 shadow-[0px_1px_20px_1px_rgba(0,0,0,.2)] flex flex-col p-5 border-t-2 border-solid rounded-md min-[412px]:gap-3 min-[540px]:shadow-[0px_1px_25px_1px_rgba(0,0,0,.2)] min-[540px]:border-t-4 md:p-10 md:gap-14 md:rounded-xl md:w-8/12 lg:gap-6 lg:w-full lg:md:rounded-md lg:p-6 border-[#ea5353]">
+                    <div className="flex flex-col gap-1 min-[360px]:gap-2 min-[540px]:gap-4 md:gap-7 lg:gap-2">
+                        <h1 className="  font-semibold   min-[360px] text-xl min-[540px]:text-3xl md:text-5xl lg:text-xl">
+                            Team
+                            Builder</h1>
+                        <p className="text-[#b8b9c0] text-[10px] min-[360px]:text-xs min-[540px]:text-base md:text-2xl lg:text-sm">
+                            Scans our talent network to create the optimal team for your project
+                        </p>
                     </div>
-
-                    </div>
-                <div className='border-0 rounded-sm p-[30px] bg-white shadow-lg border-t-4 border-[#2acfcf]
-                    md:absolute md:translate-x-(110%) md:translate-y-(73%) md:z-10
-                '>
-                    <h3>Calculator</h3>
-                    <p className="pt-5 text-[0.875rem] leading-[1.5rem]">Uses data from past projects to provide better delivery estimates</p>
-                    <div className=" mt-10 flex ">
-
-                    <img src="/assets/four-card-feature-section-master/images/icon-calculator.svg" alt="calculator" />
-                    </div>
+                    <picture className="w-full flex justify-end">
+                        <img className="w-11 min-[412px]:w-12 min-[540px]:w-14 md:w-20 lg:w-12" src="/assets/four-card-feature-section-master/images/icon-team-builder.svg"
+                            alt=""/>
+                    </picture>
                 </div>
-            </div>
-            
+                <div className="gap-1 shadow-[0px_1px_20px_1px_rgba(0,0,0,.2)] flex flex-col p-5 border-t-2 border-solid 
+                rounded-md min-[412px]:gap-3 min-[540px]:shadow-[0px_1px_25px_1px_rgba(0,0,0,.2)] min-[540px]:border-t-4 md:p-10 md:gap-14 md:rounded-xl md:w-8/12 lg:gap-6 lg:w-full lg:md:rounded-md lg:p-6 
+                border-[#fcaf4a] lg:col-start-2 col-end-3">
+                    <div className="flex flex-col gap-1 min-[360px]:gap-2 min-[540px]:gap-4 md:gap-7 lg:gap-2">
+                        <h1 className="  font-semibold   min-[360px] text-xl min-[540px]:text-3xl md:text-5xl lg:text-xl">
+                            Karma</h1>
+                        <p className="text-[#b8b9c0] text-[10px] min-[360px]:text-xs min-[540px]:text-base md:text-2xl lg:text-sm">
+                            Regularly evaluates our talent to ensure quality
+                        </p>
+                    </div>
+                    <picture className="w-full flex justify-end">
+                        <img className="w-11 min-[412px]:w-12 min-[540px]:w-14 md:w-20 lg:w-12" src="/assets/four-card-feature-section-master/images/icon-karma.svg" alt=""/>
+                    </picture>
+                </div>
+                <div className="gap-1 shadow-[0px_1px_20px_1px_rgba(0,0,0,.2)] flex flex-col p-5 border-t-2 border-solid rounded-md min-[412px]:gap-3 
+                min-[540px]:shadow-[0px_1px_25px_1px_rgba(0,0,0,.2)] min-[540px]:border-t-4 md:p-10 md:gap-14 md:rounded-xl md:w-8/12 lg:gap-6
+                lg:w-full lg:md:rounded-md lg:p-6 border-[#549ef2] lg:row-start-1 row-span-2 col-start-3 col-end-4">
+                    <div className="flex flex-col gap-1 min-[360px]:gap-2 min-[540px]:gap-4 md:gap-7 lg:gap-2">
+                        <h1 className="  font-semibold   min-[360px] text-xl min-[540px]:text-3xl md:text-5xl lg:text-xl">
+                            Calculator
+                        </h1>
+                        <p className="text-[#b8b9c0] text-[10px] min-[360px]:text-xs min-[540px]:text-base md:text-2xl lg:text-sm">Uses data from past projects to provide better delivery estimates</p>
+                    </div>
+                    <picture className="w-full flex justify-end">
+                        <img className="w-11 min-[412px]:w-12 min-[540px]:w-14 md:w-20 lg:w-12" src="/assets/four-card-feature-section-master/images/icon-calculator.svg" alt=""/>
+                    </picture>
+                </div>
+            </section>
+
         </div>
     )
-
 }
