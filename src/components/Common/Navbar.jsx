@@ -22,8 +22,8 @@ export default function Navbar() {
             >
               <a href={item.link}>
                 <div className="flex flex-row w-full h-full justify-center items-center">
-                  <div className="flex flex-row w-1/2 h-full justify-center items-center">
-                    <div className="flex flex-row w-full h-full justify-center items-center">
+                  <div className="flex flex-row w-1/2 h-full justify-center items-center gap-2">
+                    <div className="w-full h-full">
                       {item.icon}
                     </div>
                     <p
@@ -41,7 +41,7 @@ export default function Navbar() {
           );
         })}
         <div className="flex flex-row w-1/2 h-full justify-center items-center gap-4">
-          <span className="text-gray-500 hover:text-gray-700">contribute </span>
+          <span className="text-gray-500 hover:text-gray-700 capitalize">contribute </span>
           <span>
             <a href="https://github.com/tejas-gk/UiLib">
               <GitHub size={20} />
@@ -52,28 +52,3 @@ export default function Navbar() {
     </div>
   );
 }
-
-const Breadcrumb = ({ pages }) => {
-  return (
-    <nav className="flex items-center text-sm">
-      <ol className="flex list-none">
-        {pages.map((page, index) => {
-          const isLastPage = index === pages.length - 1;
-          return (
-            <li key={page.id} className="text-gray-500">
-              <a
-                href={page.link}
-                className={`text-gray-500 hover:text-gray-700 ${
-                  isLastPage ? "font-medium" : ""
-                }`}
-              >
-                {page.name}
-              </a>
-              {!isLastPage && <span className="text-gray-500 mx-2">/</span>}
-            </li>
-          );
-        })}
-      </ol>
-    </nav>
-  );
-};

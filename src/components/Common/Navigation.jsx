@@ -15,13 +15,7 @@ const navigation = [
     description: "Order summary",
   },
   {
-    name: "hydrate",
-    link: "/hydrate",
-    img: "/assets/hydrate.jpeg",
-    description: "Hydrate",
-  },
-  {
-    name: "shopping-cart",
+      name: "shopping-cart",
     link: "/shopping-cart",
     img: "/assets/shopping-cart.jpeg",
     description: "shopping cart",
@@ -31,51 +25,57 @@ const navigation = [
     link: "/product-preview",
     img: "/assets/product-preview-card-component-main/product-preview-card-component-main/design/desktop-design.jpg",
     description: "product preview",
-  },
-  {
+},
+{
     name: "nft",
     link: "/nft",
     img: "/assets/nft-preview-card-component-main/design/desktop-design.jpg",
     description: "nft",
-  },
-  {
+},
+{
     name: "rock-paper-scissors",
     link: "/rock-paper-scissors",
     img: "/assets/rock-paper-scissors/design/desktop-preview.jpg",
     description: "rock-paper-scissors",
-  },
-  {
+},
+{
     name: "profile-card",
     link: "/profile-card",
     img: "/assets/profile-card-component-main/design/desktop-design.jpg",
     description: "profile-card",
-  },
-  {
+},
+{
     name: "advice",
     link: "advice",
     img: "/assets/advice-generator-app-main/design/active-states.jpg",
     description: "advice",
-  },
-  {
+},
+{
     name: "expenses-chart",
     link: "expenses-chart",
     img: "/assets/expenses-chart/design/active-states.jpg",
     description: "expenses-chart",
-  },
-  {
+},
+{
     name: "password-generator",
     link: "password-generator",
     img: "/assets/password-generator.jpg",
     status: "in progress",
     description: "password-generator",
-  },
-  {
+},
+{
     name: "news homepage",
     link: "news",
     img: "/assets/news/design/active-states.jpg",
     description: "news homepage",
-  },
-  {
+},
+{
+  name: "hydrate",
+  link: "/hydrate",
+  img: "/assets/hydrate.jpeg",
+  description: "Hydrate",
+},
+{
     name: "dictionary",
     link: "dictionary",
     img: "/assets/dictionary/preview.jpg",
