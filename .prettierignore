@@ -1,1 +1,8 @@
 node_modules/
+**/*.jpg
+**/*.svg
+**/*.jpeg
+**/*.png
+**/*.gif
+**/*.ttf
+**/*.webp

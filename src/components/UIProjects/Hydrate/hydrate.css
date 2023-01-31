@@ -1,13 +1,29 @@
-.container{
-  background:linear-gradient(-45deg, #0797eb 0%,#1090fa 20%,#1292fa 40%,#0f8efa 70%);
+.container {
+  background: linear-gradient(
+    -45deg,
+    #0797eb 0%,
+    #1090fa 20%,
+    #1292fa 40%,
+    #0f8efa 70%
+  );
 }
-.main-btn{
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(176,223,253,1) 99%, rgba(176,223,253,1) 100%);
+.main-btn {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(176, 223, 253, 1) 99%,
+    rgba(176, 223, 253, 1) 100%
+  );
 }
 
-.hydrate{
- background: linear-gradient(45deg, rgba(73,133,204,1) 0%, rgba(2,124,229,1) 50%);
- }
- .header{
- color:#fff;
- } 
+.hydrate {
+  background: linear-gradient(
+    45deg,
+    rgba(73, 133, 204, 1) 0%,
+    rgba(2, 124, 229, 1) 50%
+  );
+}
+.header {
+  color: #fff;
+}
