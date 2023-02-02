@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
 import Cart from "./pages/Cart";
 import OrderSummary from "./components/UIProjects/order-summary/OrderSummary";
-import Hydrate from "./components/UIProjects/hydrate/Hydrate";
+import Hydrate from "./components/UIProjects/Hydrate/Hydrate";
 import Ranking from "./pages/Ranking";
 import Qr from "./pages/Qr";
 import ProductPreview from "./pages/ProductPreview";
