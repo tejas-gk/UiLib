@@ -22,11 +22,11 @@ function Cart() {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="flex flex-row shadow-lg p-8 w-full max-w-2xl border">
+      <div className="flex md:flex-row flex-col md:mt-0 mt-24 shadow-lg p-8 w-full max-w-2xl border">
         <img
           src="https://t2.gstatic.com/images?q=tbn:ANd9GcTRE-2HigMgYsEBNmtnOOCDB_F8WmKnFvVxTqSKjscLQytslqOw"
           alt=""
-          className="h-48 object-cover aspect-auto
+          className="h-48 md:object-cover aspect-auto  object-scale-down
           "
         />
         <div className="text-start">
