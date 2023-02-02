@@ -75,6 +75,7 @@ const navigation = [
         link: "/hydrate",
         img: "/assets/hydrate.jpeg",
         description: "Hydrate",
+        status:'old project'
     },
     {
         name: "dictionary",
@@ -100,6 +101,7 @@ const navigation = [
         link: 'clock',
         img: '/assets/clock.png',
         description: 'clock',
+        status: 'old project'
     }
     // {
     //     name: "comments",
