@@ -1,10 +1,9 @@
-import React from "react";
+import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
 import Cart from "./pages/Cart";
 import OrderSummary from "./components/UIProjects/order-summary/OrderSummary";
 import Hydrate from "./components/UIProjects/hydrate/Hydrate";
 import Ranking from "./pages/Ranking";
 import Qr from "./pages/Qr";
-import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
 import ProductPreview from "./pages/ProductPreview";
 import Nft from "./components/UIProjects/nft/Nft";
 import Navbar from "./components/Common/Navbar";

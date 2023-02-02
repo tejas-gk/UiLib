@@ -3,7 +3,7 @@ import images from "../../../setup/images";
 import HandIcons from "./HandIcons";
 import Choice from "./Choice";
 import Header from "./Header";
-import "./rock-paper-scissors.css";
+import styles from "./rock-paper-scissors.module.css";
 export const ScoreContext = createContext({ score: 0 });
 
 export default function index() {
@@ -69,7 +69,7 @@ export default function index() {
       <div className="flex flex-col items-center  h-screen text-2xl mt-24">
         {!userChoice ? (
           <div
-            className={`playable-area mt-8 w-[312px] h-[282px] sm:w-[476px] sm:h-[430px] bg-[length:166px_188px] sm:bg-auto 
+            className={`${styles.playableArea} mt-8 w-[312px] h-[282px] sm:w-[476px] sm:h-[430px] bg-[length:166px_188px] sm:bg-auto 
           bg-no-repeat bg-center mx-auto`}
           >
             <div className="flex flex-row justify-between ">

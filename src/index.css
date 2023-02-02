@@ -16,17 +16,3 @@ body {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-
-body {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
-}
-
-.container {
-  background-color: hsl(36, 100%, 99%);
-  width: 85%;
-  height: 100%;
-  margin: 30px auto;
-}
