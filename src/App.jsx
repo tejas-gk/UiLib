@@ -5,7 +5,7 @@ import Hydrate from "./components/UIProjects/Hydrate/Hydrate";
 import Ranking from "./pages/Ranking";
 import Qr from "./pages/Qr";
 import ProductPreview from "./pages/ProductPreview";
-import Nft from "./components/UIProjects/nft/Nft";
+import Nft from "./components/UIProjects/Nft/Nft";
 import Navbar from "./components/Common/Navbar";
 import Navigation from "./components/Common/Navigation";
 import RockPaperScissors from "./components/UIProjects/rock-paper-scissors/index";
