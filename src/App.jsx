@@ -1,12 +1,12 @@
 import React from "react";
 import Cart from "./pages/Cart";
 import OrderSummary from "./components/UIProjects/order-summary/OrderSummary";
-import Hydrate from "./components/UIProjects/Hydrate/Hydrate";
+import Hydrate from "./components/UIProjects/hydrate/Hydrate";
 import Ranking from "./pages/Ranking";
 import Qr from "./pages/Qr";
 import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
 import ProductPreview from "./pages/ProductPreview";
-import Nft from "./components/UIProjects/Nft/Nft";
+import Nft from "./components/UIProjects/nft/Nft";
 import Navbar from "./components/Common/Navbar";
 import Navigation from "./components/Common/Navigation";
 import RockPaperScissors from "./components/UIProjects/rock-paper-scissors/index";
@@ -19,6 +19,7 @@ import News from "./pages/News";
 import ExpensesChart from "./pages/ExpensesChart";
 import InteractiveRating from "./InteractiveRating";
 import FourCards from "./pages/FourCards";
+import Clock from './components/UIProjects/clock/index'
 export default function App() {
   return (
     <>
@@ -46,6 +47,7 @@ export default function App() {
             <Route path="news" element={<News />} />
             <Route path="interactive-rating" element={<InteractiveRating />} />
             <Route path="four-card-feature" element={<FourCards />} />
+            <Route path="clock" element={<Clock/>} />
             <Route path="*" element={<div>404</div>} />
           </Routes>
         </BrowserRouter>
