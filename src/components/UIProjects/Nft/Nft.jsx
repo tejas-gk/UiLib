@@ -14,6 +14,7 @@ export default function Nft() {
         <img
           className="object-cover object-fit rounded-md shadow-lg"
           src={Equillibrium}
+          alt='nft image'
         />
         <h3 className="text-white pt-4 "> Equilibrium #3429 </h3>
         <p className="font-normal text-gray-400 pt-3 text-xs ">
