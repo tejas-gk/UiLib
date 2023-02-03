@@ -19,20 +19,18 @@ import ExpensesChart from "./pages/ExpensesChart";
 import InteractiveRating from "./InteractiveRating";
 import FourCards from "./pages/FourCards";
 import Clock from './components/UIProjects/clock/index'
+import Alram from "./pages/Alram";
 export default function App() {
   return (
     <>
       <div>
         <BrowserRouter>
-          {/* <div className='mb-1'>
-            <Navbar />
-            </div> */}
           <Routes>
             <Route path="/" element={<Navigation />} />
-            <Route path="/order-summary" element={<OrderSummary />} />
-            <Route path="/hydrate" element={<Hydrate />} />
-            <Route path="/ranking" element={<Ranking />} />
-            <Route path="/qr" element={<Qr />} />
+            <Route path="order-summary" element={<OrderSummary />} />
+            <Route path="hydrate" element={<Hydrate />} />
+            <Route path="ranking" element={<Ranking />} />
+            <Route path="qr" element={<Qr />} />
             <Route path="shopping-cart" element={<Cart />} />
             <Route path="product-preview" element={<ProductPreview />} />
             <Route path="nft" element={<Nft />} />
@@ -46,7 +44,8 @@ export default function App() {
             <Route path="news" element={<News />} />
             <Route path="interactive-rating" element={<InteractiveRating />} />
             <Route path="four-card-feature" element={<FourCards />} />
-            <Route path="clock" element={<Clock/>} />
+            <Route path="clock" element={<Clock />} />
+            <Route path='alarm' element={<Alram/>} />
             <Route path="*" element={<div>404</div>} />
           </Routes>
         </BrowserRouter>
