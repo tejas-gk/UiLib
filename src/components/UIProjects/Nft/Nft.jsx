@@ -5,7 +5,7 @@ import ethereumIcon from "/assets/nft-preview-card-component-main/images/icon-et
 import "./nft.css";
 export default function Nft() {
   return (
-    <div className="flex justify-center mt-12 lg:mt-16 md:mt-14 ">
+      <div className="flex justify-center items-center   bg-[#0d1a2d] min-h-screen min-w-screen">
       <div
         className="flex flex-col w-2/3 lg:w-1/4 md:w-1/3 p-4 rounded-xl 
         bg-[#172b4d]
