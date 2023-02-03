@@ -34,7 +34,9 @@ export default function Nft() {
           </p>
         </div>
         <p className="text-xs font-medium text-gray-400 flex items-center pt-3 gap-1">
-          <img className="w-5 border rounded-full mr-2" src={avatar} /> Creation
+          <img className="w-5 border rounded-full mr-2"
+            alt='avatar'
+            src={avatar} /> Creation
           of <a className="font-medium text-white"> Jules Wyvern </a>{" "}
         </p>
       </div>
