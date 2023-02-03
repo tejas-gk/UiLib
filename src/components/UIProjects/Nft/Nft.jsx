@@ -23,10 +23,14 @@ export default function Nft() {
         </p>
         <div className="flex justify-between pt-4 border-b border-gray-700 pb-4  ">
           <p className="flex items-center text-xs gap-1 text-[#00FFF8]">
-            <img className="w-2" src={ethereumIcon} /> 0.041 ETH{" "}
+            <img className="w-2" src={ethereumIcon}
+              alt='ethereum icon'
+            /> 0.041 ETH{" "}
           </p>
           <p className="flex items-center gap-1 text-xs text-gray-400 ">
-            <img className="w-3.5" src={clockIcon} /> 3 days left{" "}
+            <img className="w-3.5"
+              alt='clock icon'
+              src={clockIcon} /> 3 days left{" "}
           </p>
         </div>
         <p className="text-xs font-medium text-gray-400 flex items-center pt-3 gap-1">
