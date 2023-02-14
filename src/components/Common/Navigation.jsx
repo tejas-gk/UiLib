@@ -102,6 +102,13 @@ const navigation = [
         img: '/assets/clock.png',
         description: 'clock',
         status: 'old project'
+    },
+    {
+        name: 'login',
+        link: 'login',
+        img: '/assets/login.png',
+        description: 'login',
+        
     }
     // {
     //     name: "comments",

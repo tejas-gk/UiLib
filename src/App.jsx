@@ -20,6 +20,7 @@ import InteractiveRating from "./InteractiveRating";
 import FourCards from "./pages/FourCards";
 import Clock from './components/UIProjects/clock/index'
 import Alram from "./pages/Alram";
+import Login from "./pages/Login";
 export default function App() {
   return (
     <>
@@ -45,7 +46,8 @@ export default function App() {
             <Route path="interactive-rating" element={<InteractiveRating />} />
             <Route path="four-card-feature" element={<FourCards />} />
             <Route path="clock" element={<Clock />} />
-            <Route path='alarm' element={<Alram/>} />
+            <Route path='alarm' element={<Alram />} />
+            <Route path='login' element={<Login />} />
             <Route path="*" element={<div>404</div>} />
           </Routes>
         </BrowserRouter>
