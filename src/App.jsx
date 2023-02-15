@@ -21,6 +21,7 @@ import FourCards from "./pages/FourCards";
 import Clock from './components/UIProjects/clock/index'
 import Alram from "./pages/Alram";
 import Login from "./pages/Login";
+import LandingPage from "./pages/LandingPage";
 export default function App() {
   return (
     <>
@@ -47,7 +48,8 @@ export default function App() {
             <Route path="four-card-feature" element={<FourCards />} />
             <Route path="clock" element={<Clock />} />
             <Route path='alarm' element={<Alram />} />
-            <Route path='login' element={<Login />} />
+            <Route path='login' element={<Login />} />  
+            <Route path='landing-page' element={<LandingPage />} />
             <Route path="*" element={<div>404</div>} />
           </Routes>
         </BrowserRouter>

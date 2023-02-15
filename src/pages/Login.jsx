@@ -30,7 +30,8 @@ export default function Login() {
                   </div>
               </div>
               <div className='flex-1 bg-indigo-100 text-center hidden lg:flex'>
-                  <div className='m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat' style={{ backgroundImage: "url('https://source.unsplash.com/IXUM4cJynP0/600x800')" }}>
+                  <div className='m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat'
+                      style={{ backgroundImage: "url('https://source.unsplash.com/IXUM4cJynP0/600x800')" }}>
                   </div></div>
           </div>
     </div>
