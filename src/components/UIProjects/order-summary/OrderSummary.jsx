@@ -3,7 +3,7 @@ import IconMusic from "/assets/order-summary/images/icon-music.svg";
 import "./order-summary.css";
 export default function OrderSummary() {
   return (
-    <div className="flex items-center justify-center h-screen mt-12">
+    <div className="order-summary-screen flex items-center justify-center h-screen mt-12">
       <div className="flex flex-col items-center justify-center md:w-1/2 shadow-md max-w-[28rem] bg-white lmd:pb-[5rem]">
         <img src={illustrationHero} alt="illustrationHero" />
         <div className="flex flex-col items-center justify-center p-6 mt-12">

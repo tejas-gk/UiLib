@@ -22,6 +22,7 @@ import Clock from './components/UIProjects/clock/index'
 import Alram from "./pages/Alram";
 import Login from "./pages/Login";
 import LandingPage from "./pages/LandingPage";
+import ColorPallette from "./pages/ColorPallette";
 export default function App() {
   return (
     <>
@@ -50,6 +51,7 @@ export default function App() {
             <Route path='alarm' element={<Alram />} />
             <Route path='login' element={<Login />} />  
             <Route path='landing-page' element={<LandingPage />} />
+            <Route path='color-pallette' element={<ColorPallette />} />
             <Route path="*" element={<div>404</div>} />
           </Routes>
         </BrowserRouter>
