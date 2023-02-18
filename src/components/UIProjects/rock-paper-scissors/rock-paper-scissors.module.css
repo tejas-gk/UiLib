@@ -1,3 +1,20 @@
 .playableArea {
   background-image: url("/assets/rock-paper-scissors/images/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
 }
+.body{
+  background-image: radial-gradient(
+    circle at top center,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+  background-size: cover;
+  height: 100vh;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  overflow: hidden;
+}
+
+

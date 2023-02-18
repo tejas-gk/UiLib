@@ -64,7 +64,7 @@ export default function index() {
   };
 
   return (
-    <div className="body bg-[#192748]">
+    <div className={styles.body}>
       <Header score={score} />
       <div className="flex flex-col items-center  h-screen text-2xl mt-24">
         {!userChoice ? (
