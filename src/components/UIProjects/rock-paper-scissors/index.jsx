@@ -88,7 +88,8 @@ export default function index() {
               />
             </div>
 
-            <div className="scissors flex justify-center mt-20">
+            <div className="scissors flex justify-center md:mt-20
+            ">
               <HandIcons
                 extraClass="border-[1rem] border-[#f7b536]"
                 images={images.scissors}
