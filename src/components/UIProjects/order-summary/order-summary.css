@@ -9,7 +9,7 @@
 }
 
 @media (max-width: 768px) {
-  body {
+ .order-summary-screen{
     background: hsl(225, 100%, 98%)
       url("/assets/order-summary/images/pattern-background-mobile.svg")
       no-repeat;
