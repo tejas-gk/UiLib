@@ -15,7 +15,7 @@ git clone https://github.com/tejas-gk/UiLib
 cd ui-projects/UiLib
 ```
 ## Code of Conduct
-This repository follows a strict code of conduct. Please make sure to read and understand the code of conduct before making any contributions.
+This repository follows a strict code of conduct. Please make sure to read and understand the code of conduct before making any contributions.804758
 
 ## Support
 If you have any questions or need help with anything related to the repository, please feel free to reach out to me.
