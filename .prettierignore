@@ -6,3 +6,5 @@ node_modules/
 **/*.gif
 **/*.ttf
 **/*.webp
+/*
+!src/
