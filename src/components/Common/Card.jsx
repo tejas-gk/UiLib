@@ -15,7 +15,7 @@ const Card = ({ children, img, description, ...props }) => {
             <div className='flex pl-4 h-20  text-start flex-col mt-2'>
                 <h1 className='text-2xl font-bold capitalize'>{children}</h1>
                 <div className='flex justify-between items-center mt-2'>
-                    <p className='text-gray-400 text-sm pt-2 pl-2 capitalize'>
+                    <p className='text-gray-400 text-sm pt-2 pl-2 capitalize truncate'>
                         {description}
                     </p>
                     <p className='text-gray-400 text-sm mr-4'>{props.status}</p>

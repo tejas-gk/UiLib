@@ -67,6 +67,7 @@ export default function Navigation() {
                                         href={item.html_url}
                                         target='_blank'
                                         rel='noreferrer'
+                                        className='flex flex-col justify-center items-center'
                                     >
                                         <img
                                             src={item.avatar_url}

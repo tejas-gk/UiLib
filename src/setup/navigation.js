@@ -7,18 +7,17 @@ export const external = [
     },
     {
         title: 'Credit Card Form',
-        // link: "https://credit-card-gamma.vercel.app/",
-        link: '', // not adding because google thinks its some kind of phishing site and gives red screen of error
+        link: 'https://credit-card-gamma.vercel.app/',
         description: 'Credit Card Form with interactive UI',
         image: '/assets/credit-card/assets/credit-card.png',
     },
     {
-        title:'Tesla clone',
+        title: 'Tesla clone',
         link: 'https://tesla-clone-tejas-gk.vercel.app/',
-         
+
         description: 'Tesla clone',
         image: '/assets/tesla-clone.png',
-    }
+    },
 ];
 export const navigation = [
     {
