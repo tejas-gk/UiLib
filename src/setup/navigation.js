@@ -1,3 +1,9 @@
+export const external = [{
+  title: 'space tourism',
+  link: 'https://space-tourism-peach.vercel.app/',
+  description: 'space tourism',
+  image: '/assets/space-tourism/preview.jpg',
+}, ]
 export const navigation = [
   {
     name: "qr",

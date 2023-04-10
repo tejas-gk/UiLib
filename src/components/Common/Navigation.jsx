@@ -2,17 +2,10 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import { ExternalLink } from "react-feather";
-import { navigation } from '../../setup/navigation'
+import { navigation,external } from '../../setup/navigation'
 import Card from "./Card";
 
-const external = [
-    {
-        title: 'space tourism',
-        link: 'https://space-tourism-peach.vercel.app/',
-        description: 'space tourism',
-        image: '/assets/space-tourism/preview.jpg',
-    },
-]
+
 export default function Navigation() {
     const [contributions, setContributions] = useState([]);
     useEffect(() => {
