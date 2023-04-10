@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 const hexColors = [
     '0',
     '1',
@@ -15,8 +15,8 @@ const hexColors = [
     'C',
     'D',
     'E',
-    'F'
-]
+    'F',
+];
 const hslColors = [
     '0',
     '15',
@@ -42,84 +42,88 @@ const hslColors = [
     '315',
     '330',
     '345',
-    '360'
-]
-const rgbColors = [
-    '0',
-    '51',
-    '102',
-    '153',
-    '204',
-    '255'
-]
+    '360',
+];
+const rgbColors = ['0', '51', '102', '153', '204', '255'];
 
 const classNames = (...classes) => {
-    return classes.filter(Boolean).join(' ')
-}
-
+    return classes.filter(Boolean).join(' ');
+};
 
 export default function ColorPallette() {
-    const [color, setColor] = useState('#000000')
-    const [selectedMode, setSelectedMode] = useState('hex')
+    const [color, setColor] = useState('#000000');
+    const [selectedMode, setSelectedMode] = useState('hex');
 
     const generateRandomColor = () => {
-        let color = '#'
+        let color = '#';
         for (let i = 0; i < 6; i++) {
-            const randomIndex = Math.floor(Math.random() * hexColors.length)
-            color += hexColors[randomIndex]
+            const randomIndex = Math.floor(Math.random() * hexColors.length);
+            color += hexColors[randomIndex];
         }
-        setColor(color)
-    }
+        setColor(color);
+    };
     const generateRandomHSL = () => {
-        let color = 'hsl('
+        let color = 'hsl(';
         for (let i = 0; i < 3; i++) {
-            const randomIndex = Math.floor(Math.random() * hslColors.length)
-            color += hslColors[randomIndex]
+            const randomIndex = Math.floor(Math.random() * hslColors.length);
+            color += hslColors[randomIndex];
             if (i < 2) {
-                color += ','
+                color += ',';
             }
         }
-        color += ')'
-        setColor(color)
-    }
+        color += ')';
+        setColor(color);
+    };
     const generateRandomRGB = () => {
-        let color = 'rgb('
+        let color = 'rgb(';
         for (let i = 0; i < 3; i++) {
-            const randomIndex = Math.floor(Math.random() * rgbColors.length)
-            color += rgbColors[randomIndex]
+            const randomIndex = Math.floor(Math.random() * rgbColors.length);
+            color += rgbColors[randomIndex];
             if (i < 2) {
-                color += ','
+                color += ',';
             }
         }
-        color += ')'
-        setColor(color)
-    }
+        color += ')';
+        setColor(color);
+    };
     const generateRandomColorByMode = () => {
         if (selectedMode === 'hex') {
-            generateRandomColor()
+            generateRandomColor();
         } else if (selectedMode === 'hsl') {
-            generateRandomHSL()
+            generateRandomHSL();
         } else if (selectedMode === 'rgb') {
-            generateRandomRGB()
+            generateRandomRGB();
         }
-    }
+    };
 
     const copyToClipboard = () => {
-        navigator.clipboard.writeText(color)
-    }
+        navigator.clipboard.writeText(color);
+    };
 
     const colorShades = Array.from({ length: 10 }, (_, index) => {
-        const shade = (index + 1) * 100 / 11;
-        return classNames(`bg-${color}`, `darken-${shade}`, `hover:darken-${shade + 10}`);
+        const shade = ((index + 1) * 100) / 11;
+        return classNames(
+            `bg-${color}`,
+            `darken-${shade}`,
+            `hover:darken-${shade + 10}`
+        );
     });
     return (
-        <div className='flex flex-col items-center h-screen bg-gray-100
-      '>
-            <h1 className='text-6xl font-bold mt-10 underline'>Color Pallette</h1>
+        <div
+            className='flex flex-col items-center h-screen bg-gray-100
+      '
+        >
+            <h1 className='text-6xl font-bold mt-10 underline'>
+                Color Pallette
+            </h1>
             <div className='flex items-center mt-10'>
                 <div className='flex flex-col items-center'>
                     <h1 className='text-2xl font-bold'>Mode</h1>
-                    <select className='mt-2' value={selectedMode} onChange={(e) => setSelectedMode(e.target.value)}>
+                    <select
+                        className='mt-2'
+                        value={selectedMode}
+                        onChange={(e) => setSelectedMode(e.target.value)}
+                    >
                         <option value='hex'>Hex</option>
                         <option value='hsl'>HSL</option>
                         <option value='rgb'>RGB</option>
@@ -131,26 +135,38 @@ export default function ColorPallette() {
                 </div>
                 <div
                     onClick={copyToClipboard}
-                    className='ml-10 w-20 h-20 rounded-full cursor-pointer' style={{ backgroundColor: color }}></div>
+                    className='ml-10 w-20 h-20 rounded-full cursor-pointer'
+                    style={{ backgroundColor: color }}
+                ></div>
             </div>
-            <button className='bg-blue-500 text-white px-4 py-2 rounded-lg mt-5' onClick={generateRandomColorByMode}>Generate Random Color</button>
+            <button
+                className='bg-blue-500 text-white px-4 py-2 rounded-lg mt-5'
+                onClick={generateRandomColorByMode}
+            >
+                Generate Random Color
+            </button>
 
-
-            <div className='grid md:grid-cols-10 gap-4 mt-10 cursor-pointer grid-cols-3
-            '>
-                {
-                    selectedMode === 'hex' && hexColors.map((color, index) => {
+            <div
+                className='grid md:grid-cols-10 gap-4 mt-10 cursor-pointer grid-cols-3
+            '
+            >
+                {selectedMode === 'hex' &&
+                    hexColors.map((color, index) => {
                         return (
                             <div
                                 onClick={() => {
-                                    setColor(`#${color}${color}${color}${color}${color}${color}`)
+                                    setColor(
+                                        `#${color}${color}${color}${color}${color}${color}`
+                                    );
                                 }}
-                                key={index} className='w-20 h-20 rounded-full' style={{ backgroundColor: `#${color}${color}${color}${color}${color}${color}` }}></div>
-                        )
-                    }
-                    )
-
-                }
+                                key={index}
+                                className='w-20 h-20 rounded-full'
+                                style={{
+                                    backgroundColor: `#${color}${color}${color}${color}${color}${color}`,
+                                }}
+                            ></div>
+                        );
+                    })}
                 {colorShades.map((shade, index) => (
                     <div
                         key={index}
@@ -158,29 +174,37 @@ export default function ColorPallette() {
                         onClick={() => setColor(colorShades[index])}
                     />
                 ))}
-                {
-                    selectedMode === 'hsl' && hslColors.map((color, index) => {
+                {selectedMode === 'hsl' &&
+                    hslColors.map((color, index) => {
                         return (
                             <div
-                                onClick={() => setColor(`hsl(${color},${color},${color})`)}
-                                key={index} className='w-20 h-20 rounded-full' style={{ backgroundColor: `hsl(${color},${color},${color})` }}></div>
-                        )
-                    }
-                    )
-                }
-                {
-                    selectedMode === 'rgb' && rgbColors.map((color, index) => {
+                                onClick={() =>
+                                    setColor(`hsl(${color},${color},${color})`)
+                                }
+                                key={index}
+                                className='w-20 h-20 rounded-full'
+                                style={{
+                                    backgroundColor: `hsl(${color},${color},${color})`,
+                                }}
+                            ></div>
+                        );
+                    })}
+                {selectedMode === 'rgb' &&
+                    rgbColors.map((color, index) => {
                         return (
                             <div
-                                onClick={() => setColor(`rgb(${color},${color},${color})`)}
-                                key={index} className='w-20 h-20 rounded-full' style={{ backgroundColor: `rgb(${color},${color},${color})` }}></div>
-                        )
-                    }
-                    )
-                }
+                                onClick={() =>
+                                    setColor(`rgb(${color},${color},${color})`)
+                                }
+                                key={index}
+                                className='w-20 h-20 rounded-full'
+                                style={{
+                                    backgroundColor: `rgb(${color},${color},${color})`,
+                                }}
+                            ></div>
+                        );
+                    })}
             </div>
-
-
         </div>
-    )
+    );
 }

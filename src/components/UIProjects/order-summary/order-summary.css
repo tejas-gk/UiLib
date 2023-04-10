@@ -1,18 +1,18 @@
 .order-summary-screen {
-  box-sizing: border-box;
-  font-family: "Red Hat Display", sans-serif;
-  line-height: 1.5;
-  background: hsl(225, 100%, 98%)
-    url("/assets/order-summary/images/pattern-background-desktop.svg")
-    no-repeat;
-  background-size: cover;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    line-height: 1.5;
+    background: hsl(225, 100%, 98%)
+        url('/assets/order-summary/images/pattern-background-desktop.svg')
+        no-repeat;
+    background-size: cover;
 }
 
 @media (max-width: 768px) {
- .order-summary-screen{
-    background: hsl(225, 100%, 98%)
-      url("/assets/order-summary/images/pattern-background-mobile.svg")
-      no-repeat;
-    background-size: cover;
-  }
+    .order-summary-screen {
+        background: hsl(225, 100%, 98%)
+            url('/assets/order-summary/images/pattern-background-mobile.svg')
+            no-repeat;
+        background-size: cover;
+    }
 }

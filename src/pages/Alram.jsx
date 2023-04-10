@@ -1,7 +1,5 @@
-import React from 'react'
+import React from 'react';
 
 export default function Alram() {
-  return (
-    <div>Alram</div>
-  )
+    return <div>Alram</div>;
 }
