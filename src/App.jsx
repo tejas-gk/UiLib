@@ -16,7 +16,7 @@ import Dictionary from './components/UIProjects/dictionary/index';
 import GameOfLife from './components/UIProjects/game-of-life/index';
 import News from './pages/News';
 import ExpensesChart from './pages/ExpensesChart';
-import InteractiveRating from './InteractiveRating';
+import InteractiveRating from './pages/InteractiveRating';
 import FourCards from './pages/FourCards';
 import Clock from './components/UIProjects/clock/index';
 import Alram from './pages/Alram';
