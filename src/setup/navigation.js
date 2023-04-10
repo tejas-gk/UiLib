@@ -12,6 +12,13 @@ export const external = [
         description: 'Credit Card Form with interactive UI',
         image: '/assets/credit-card/assets/credit-card.png',
     },
+    {
+        title:'Tesla clone',
+        link: 'https://tesla-clone-tejas-gk.vercel.app/',
+         
+        description: 'Tesla clone',
+        image: '/assets/tesla-clone.png',
+    }
 ];
 export const navigation = [
     {
