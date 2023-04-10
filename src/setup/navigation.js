@@ -1,9 +1,18 @@
-export const external = [{
-  title: 'space tourism',
-  link: 'https://space-tourism-peach.vercel.app/',
-  description: 'space tourism',
-  image: '/assets/space-tourism/preview.jpg',
-}, ]
+export const external = [
+  {
+    title: "space tourism",
+    link: "https://space-tourism-peach.vercel.app/",
+    description: "space tourism",
+    image: "/assets/space-tourism/preview.jpg",
+  },
+  {
+    title: "Credit Card Form",
+    // link: "https://credit-card-gamma.vercel.app/",
+    link: "", // not adding because google thinks its some kind of phishing site and gives red screen of error
+    description: "Credit Card Form with interactive UI",
+    image: "/assets/credit-card/assets/credit-card.png",
+  },
+]
 export const navigation = [
   {
     name: "qr",
@@ -134,4 +143,4 @@ export const navigation = [
   //     img: "/assets/url-shortening-api-master/url-shortening-api-master/design/desktop-design.jpg",
   //     description: "url-shortening",
   // }
-];
+]
