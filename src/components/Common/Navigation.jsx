@@ -27,7 +27,7 @@ export default function Navigation() {
                             >
                                 <Link to={item.link}>
                                     <Card
-                                        children={item.title}
+                                        children={item.name}
                                         img={item.img}
                                         description={item.description}
                                         status={item?.status}
