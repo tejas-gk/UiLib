@@ -12,7 +12,6 @@ import RockPaperScissors from './components/UIProjects/rock-paper-scissors/index
 import ProfileCard from './pages/ProfileCard';
 import Advice from './pages/Advice';
 import PasswordGenerator from './pages/PasswordGenerator';
-import Dictionary from './components/UIProjects/dictionary/index';
 import GameOfLife from './components/UIProjects/game-of-life/index';
 import News from './pages/News';
 import ExpensesChart from './pages/ExpensesChart';
@@ -54,7 +53,6 @@ export default function App() {
                             element={<ExpensesChart />}
                         />
                         <Route path='advice' element={<Advice />} />
-                        <Route path='dictionary' element={<Dictionary />} />
                         <Route
                             path='password-generator'
                             element={<PasswordGenerator />}

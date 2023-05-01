@@ -14,10 +14,16 @@ export const external = [
     {
         title: 'Tesla clone',
         link: 'https://tesla-clone-tejas-gk.vercel.app/',
-
         description: 'Tesla clone',
         image: '/assets/tesla-clone.png',
     },
+    {
+        title: 'Apple airpod scroll',
+        link: 'https://tejas-gk.github.io/scroool/',
+        description: 'apple airpod scroll',
+        image: '/assets/apple airpods scroll.jpeg',
+    },
+
 ];
 export const navigation = [
     {
