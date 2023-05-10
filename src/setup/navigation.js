@@ -23,6 +23,12 @@ export const external = [
         description: 'apple airpod scroll',
         image: '/assets/apple airpods scroll.jpeg',
     },
+     {
+        title: 'Dictionary',
+        link: 'https://dictionary-fem.vercel.app/',
+        description: 'Dictionary FEM',
+        image: '/assets/dictionary/preview.jpg',
+    },
 
 ];
 export const navigation = [
