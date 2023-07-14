@@ -2,7 +2,7 @@
 Welcome to my UI project repository! This repository contains a collection of user interface projects created by me. Each project is built using modern front-end technologies and design principles.
 
 ## Contributing
-This repository is open to contributions from the community. If you have an idea for a new project or would like to contribute to an existing project, here's what you need to know:
+This repository is open to contributions from the community. If you have an idea for a new project or would like to contribute to an existing project, here's what you need to know
 
 Please follow the existing directory structure when adding new projects.
 All contributions must be in line with the repository's code of conduct.
